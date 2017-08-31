@@ -8,17 +8,20 @@
 
     <View
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
         android:background="#ff0000" />
 
     <View
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
         android:background="#00ff00" />
 
     <View
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
         android:background="#0000ff" />
 
 
