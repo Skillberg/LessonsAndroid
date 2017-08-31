@@ -1,0 +1,19 @@
+buildscript {
+    repositories { // Maven-репозитории для системы сборки
+        jcenter()
+    }
+    dependencies { // Зависимости системы сборки
+        classpath 'com.android.tools.build:gradle:3.0.0-beta3'
+    }
+}
+
+allprojects {
+    repositories { // Maven-репозитории, общие для всех модулей
+        jcenter()
+        google()
+    }
+}
+
+task clean(type: Delete) { // Что делать при "очистке" проекта
+    delete rootProject.buildDir
+}

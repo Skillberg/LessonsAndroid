@@ -1,0 +1,51 @@
+// Это означает, что мы собираем приложение
+// В ином случае мы можем собирать библиотеку
+apply plugin: 'com.android.application'
+
+// Правила сборки Android-приложения
+android {
+    // Версия SDK, с которой будет собрано приложение
+    compileSdkVersion 26
+    // Версия инструментов сборки
+    buildToolsVersion "26.0.1"
+
+    // Стандартная конфигурация
+    defaultConfig {
+        applicationId "com.test.lessons"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    // Типы сборки
+    buildTypes {
+
+        // Правила для релизной сборки
+        release {
+            // Это нам пока не нужно
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// Зависимости модуля
+dependencies {
+    // Собираем все jar-файлы из директории libs
+    // В более ранних версиях вместо implementation использовалась директива compile
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Зависимости для тестов
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    // Библиотеки Android Support
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // Зависимости для тестов
+    testImplementation 'junit:junit:4.12'
+}
