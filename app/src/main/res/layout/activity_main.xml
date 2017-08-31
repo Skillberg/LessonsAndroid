@@ -6,21 +6,27 @@
     tools:context="com.test.lessons.MainActivity">
 
     <View
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start|top"
         android:background="#ff0000" />
 
     <View
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|top"
         android:background="#00ff00" />
 
     <View
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center"
+        android:layout_gravity="start|bottom"
         android:background="#0000ff" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|bottom"
+        android:background="#000000" />
 
 </FrameLayout>
