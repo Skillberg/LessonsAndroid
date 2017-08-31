@@ -6,10 +6,18 @@
     tools:context="com.test.lessons.MainActivity">
 
     <View
+        android:id="@+id/red_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:background="#ff0000" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/red_view"
+        android:background="#00ff00" />
 
 </RelativeLayout>
