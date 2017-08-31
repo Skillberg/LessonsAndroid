@@ -8,7 +8,7 @@
     <View
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_gravity="end|bottom"
+        android:layout_gravity="center"
         android:background="#ff0000" />
 
 </FrameLayout>
