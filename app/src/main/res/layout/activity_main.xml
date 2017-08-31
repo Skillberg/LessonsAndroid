@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.test.lessons.MainActivity">
 
-    <View
-        android:id="@+id/red_view"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:background="#ff0000" />
+    <TextView
+        android:id="@+id/hello_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textStyle="bold|italic" />
 
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_above="@id/red_view"
-        android:layout_alignBottom="@id/red_view"
-        android:layout_alignEnd="@id/red_view"
-        android:background="#00ff00" />
-
-</RelativeLayout>
+</LinearLayout>
