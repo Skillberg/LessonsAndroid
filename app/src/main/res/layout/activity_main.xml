@@ -18,7 +18,8 @@
         android:id="@+id/name_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword" />
+        android:hint="Введите имя"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/hello_btn"
