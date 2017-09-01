@@ -18,15 +18,14 @@
         android:id="@+id/name_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="top|start"
-        android:hint="Введите адрес"
-        android:inputType="textPostalAddress|textMultiLine"
-        android:maxLines="2" />
+        android:hint="Введите имя"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/hello_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="Say hello!" />
 
 </LinearLayout>
