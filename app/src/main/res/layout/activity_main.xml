@@ -14,7 +14,7 @@
         android:background="@color/colorHelloBackground"
         android:text="@string/hello_text"
         android:textColor="@color/colorHelloText"
-        android:textSize="28sp" />
+        android:textSize="@dimen/hello_text_size" />
 
     <EditText
         android:id="@+id/name_et"
