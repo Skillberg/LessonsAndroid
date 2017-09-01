@@ -21,7 +21,7 @@
         android:gravity="top|start"
         android:hint="Введите адрес"
         android:inputType="textPostalAddress|textMultiLine"
-        android:lines="10" />
+        android:maxLines="2" />
 
     <Button
         android:id="@+id/hello_btn"
