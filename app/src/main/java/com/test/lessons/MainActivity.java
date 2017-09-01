@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             String name = editText.getText().toString();
 
-            textView.setText("Hi, " + name);
+            textView.setText(getString(R.string.name_text_format, name));
         }
     };
 
