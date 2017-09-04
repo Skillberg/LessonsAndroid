@@ -9,9 +9,9 @@
     <ImageView
         android:id="@+id/image_iv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:background="#990000"
-        android:scaleType="fitXY"
         android:src="@drawable/image" />
 
 </LinearLayout>
