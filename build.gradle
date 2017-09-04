@@ -1,9 +1,10 @@
 buildscript {
     repositories { // Maven-репозитории для системы сборки
         jcenter()
+        google()
     }
     dependencies { // Зависимости системы сборки
-        classpath 'com.android.tools.build:gradle:3.0.0-beta3'
+        classpath 'com.android.tools.build:gradle:3.0.0-beta4'
     }
 }
 

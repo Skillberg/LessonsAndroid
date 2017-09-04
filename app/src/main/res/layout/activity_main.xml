@@ -3,31 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.test.lessons.MainActivity">
 
-    <TextView
-        android:id="@+id/hello_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorHelloBackground"
-        android:text="@string/hello_text"
-        android:textColor="@color/colorHelloText"
-        android:textSize="@dimen/hello_text_size" />
-
-    <EditText
-        android:id="@+id/name_et"
+    <ImageView
+        android:id="@+id/image_iv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Введите имя"
-        android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/hello_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="Say hello!" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
