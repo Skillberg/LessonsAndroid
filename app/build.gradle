@@ -7,7 +7,7 @@ android {
     // Версия SDK, с которой будет собрано приложение
     compileSdkVersion 26
     // Версия инструментов сборки
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
 
     // Стандартная конфигурация
     defaultConfig {
